@@ -1,0 +1,79 @@
+@charset "UTF-8";
+//@import '_common';
+//$wordColor:#737373;
+//$lineColor:#ff6a00;
+$background:url(img/bg.png) no-repeat; 
+// .............common start...............
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom; 
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  display: block; 
+}
+
+input {
+  outline: none; 
+}
+.w{
+    width:1200px;
+    margin:0 auto;
+    background: pink;
+}
+// ...............common end............
+
+
+// ...............header-top............
+.header-top{
+  width: 100%;
+  height: 80px;
+  background: url(../img/h_01.jpg) top center no-repeat;
+  background-size: cover;
+}
+// ..............header-nav..............
+.header-nav{
+  height:34px;
+  font-size:12px;
+  background:#f2f2f2;
+  border:1px solid #e6e6e6;
+  .w{
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+    .header-nav-l{
+      float:left;
+      .item{
+        float:left;
+        line-height:34px;
+        display:block;
+        a{
+          position: relative;
+          display: block;
+          height: 34px;
+          padding: 0 8px;
+          color:#737373;
+          .ico{
+            background: $background;
+          }
+          .header-nav-01{
+            background-position: 0px -318px;
+          }
+        }
+      }
+    }
+    .header-nav-r{
+      float:right;
+    }
+  }
+}
